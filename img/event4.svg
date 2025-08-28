@@ -1,0 +1,75 @@
+<svg width="400" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg4" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#f093fb;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f5576c;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="rocket" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FF7700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FF9838;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="400" height="300" fill="url(#bg4)"/>
+  
+  <!-- Launch platform -->
+  <rect x="150" y="220" width="100" height="60" fill="#1A1A2E" rx="5"/>
+  <rect x="140" y="270" width="120" height="20" fill="#333" rx="10"/>
+  
+  <!-- Rocket -->
+  <g transform="translate(200,180)">
+    <!-- Rocket body -->
+    <rect x="-15" y="-40" width="30" height="60" fill="url(#rocket)" rx="15"/>
+    <!-- Rocket tip -->
+    <polygon points="0,-50 -10,-40 10,-40" fill="#FFF"/>
+    <!-- Rocket fins -->
+    <polygon points="-15,-10 -25,-5 -15,5" fill="#FF9838"/>
+    <polygon points="15,-10 25,-5 15,5" fill="#FF9838"/>
+    <!-- Window -->
+    <circle cx="0" cy="-20" r="8" fill="#87CEEB"/>
+    <circle cx="0" cy="-20" r="5" fill="#FFF" opacity="0.7"/>
+  </g>
+  
+  <!-- Flame/exhaust -->
+  <g transform="translate(200,220)">
+    <polygon points="-8,0 0,15 8,0" fill="#FF4500"/>
+    <polygon points="-5,0 0,20 5,0" fill="#FFD700"/>
+  </g>
+  
+  <!-- Audience -->
+  <g transform="translate(80,240)">
+    <circle cx="0" cy="0" r="6" fill="#333"/>
+    <circle cx="15" cy="-3" r="6" fill="#333"/>
+    <circle cx="30" cy="2" r="6" fill="#333"/>
+    <circle cx="45" cy="-1" r="6" fill="#333"/>
+  </g>
+  
+  <g transform="translate(280,245)">
+    <circle cx="0" cy="0" r="6" fill="#333"/>
+    <circle cx="15" cy="-2" r="6" fill="#333"/>
+    <circle cx="30" cy="1" r="6" fill="#333"/>
+    <circle cx="40" cy="-3" r="6" fill="#333"/>
+  </g>
+  
+  <!-- Stars -->
+  <g fill="#FFF">
+    <polygon points="50,40 52,46 58,46 53,50 55,56 50,52 45,56 47,50 42,46 48,46" transform="scale(0.8)"/>
+    <polygon points="320,30 322,36 328,36 323,40 325,46 320,42 315,46 317,40 312,36 318,36" transform="scale(0.6)"/>
+    <polygon points="100,70 102,76 108,76 103,80 105,86 100,82 95,86 97,80 92,76 98,76" transform="scale(0.5)"/>
+    <polygon points="350,80 352,86 358,86 353,90 355,96 350,92 345,96 347,90 342,86 348,86" transform="scale(0.7)"/>
+  </g>
+  
+  <!-- Startup logos/symbols -->
+  <rect x="60" y="120" width="25" height="25" fill="none" stroke="#FFF" stroke-width="2" rx="3"/>
+  <text x="72" y="137" text-anchor="middle" fill="#FFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">S1</text>
+  
+  <rect x="320" y="140" width="25" height="25" fill="none" stroke="#FFF" stroke-width="2" rx="3"/>
+  <text x="332" y="157" text-anchor="middle" fill="#FFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">S2</text>
+  
+  <rect x="80" y="180" width="25" height="25" fill="none" stroke="#FFF" stroke-width="2" rx="3"/>
+  <text x="92" y="197" text-anchor="middle" fill="#FFF" font-family="Arial, sans-serif" font-size="12" font-weight="bold">S3</text>
+  
+  <!-- Title -->
+  <text x="200" y="25" text-anchor="middle" fill="#FFF" font-family="Arial, sans-serif" font-size="16" font-weight="bold">Startup Incubator Launch</text>
+</svg>
